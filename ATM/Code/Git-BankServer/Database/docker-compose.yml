@@ -1,0 +1,19 @@
+version: '3.1'
+
+services:
+  db:
+    image: mysql:latest
+    container_name: project34-database
+    environment:
+      MYSQL_DATABASE: 'WWB_database'
+      MYSQL_USER: 'bank'
+      MYSQL_PASSWORD: 'Project_34'
+      MYSQL_ROOT_PASSWORD: 'Project_34'
+    ports:
+      - '3306:3306'
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
+    driver: local
