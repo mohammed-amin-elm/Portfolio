@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Layer_1"
+   data-name="Layer 1"
+   width="206.69mm"
+   height="173.05mm"
+   viewBox="0 0 585.89 490.54"
+   version="1.1"
+   sodipodi:docname="Lift Segment voorzijde v.2019.svg"
+   inkscape:version="1.1 (c4e8f9e, 2021-05-24)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1486"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.87419259"
+     inkscape:cx="384.35466"
+     inkscape:cy="323.15534"
+     inkscape:window-width="1488"
+     inkscape:window-height="909"
+     inkscape:window-x="-195"
+     inkscape:window-y="76"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Layer_1" />
+  <defs
+     id="defs1399">
+    <style
+       id="style1397">.cls-1,.cls-3{fill:#fff;}.cls-1,.cls-2,.cls-3,.cls-4{stroke:red;stroke-miterlimit:10;}.cls-1,.cls-2{stroke-width:0.03px;}.cls-2,.cls-4{fill:none;}.cls-3,.cls-4{stroke-width:0.03px;}</style>
+  </defs>
+  <rect
+     class="cls-1"
+     x="499.10837"
+     y="39.748432"
+     width="35.71917"
+     height="54.137875"
+     id="rect1401" />
+  <polygon
+     class="cls-2"
+     points="534,293.12 534,278.94 539.66,278.94 539.66,273.36 534,273.36 534,259.11 499.98,259.11 499.98,273.36 494.3,273.36 494.3,278.94 499.98,278.94 499.98,293.12 "
+     id="polygon1403"
+     transform="matrix(0.99997672,0,0,0.99996078,0,-7.4519704e-6)" />
+  <path
+     class="cls-3"
+     d="M 453.82943,-0.19"
+     id="path1405" />
+  <line
+     class="cls-3"
+     x1="0.28999323"
+     y1="29.428839"
+     x2="0.28999323"
+     y2="8.6596527"
+     id="line1407" />
+  <line
+     class="cls-3"
+     x1="0.28999323"
+     y1="185.09274"
+     x2="0.28999323"
+     y2="128.08496"
+     id="line1409" />
+  <line
+     class="cls-3"
+     x1="0.28999323"
+     y1="331.19699"
+     x2="0.28999323"
+     y2="284.29883"
+     id="line1411" />
+  <line
+     class="cls-3"
+     x1="0.28999323"
+     y1="453.34219"
+     x2="0.28999323"
+     y2="428.36319"
+     id="line1413" />
+  <rect
+     class="cls-4"
+     x="85.328018"
+     y="101.766"
+     width="283.4534"
+     height="283.44888"
+     id="rect1415" />
+  <line
+     class="cls-4"
+     y1="8.6596527"
+     x2="156.55635"
+     y2="8.6596527"
+     id="line1417"
+     x1="0" />
+  <line
+     class="cls-4"
+     x1="585.86633"
+     y1="453.34219"
+     x2="585.86633"
+     y2="8.6596527"
+     id="line1419" />
+  <line
+     class="cls-4"
+     x1="485.96869"
+     y1="312.91772"
+     x2="485.96869"
+     y2="312.91772"
+     id="line1421" />
+  <rect
+     class="cls-4"
+     x="439.86975"
+     y="29.428839"
+     width="8.4998016"
+     height="99.206108"
+     id="rect1423" />
+  <rect
+     class="cls-4"
+     x="439.56976"
+     y="185.09274"
+     width="8.4998016"
+     height="99.206108"
+     id="rect1425" />
+  <rect
+     class="cls-4"
+     x="439.56976"
+     y="330.41702"
+     width="8.4998016"
+     height="99.206108"
+     id="rect1427" />
+  <polyline
+     class="cls-4"
+     points="0.29 29.67 0.29 29.43 8.8 29.43 8.8 128.64 0.29 128.64 0.29 128.42"
+     id="polyline1429"
+     transform="matrix(0.99997672,0,0,0.99996078,0,-7.4519704e-6)" />
+  <path
+     class="cls-4"
+     d="M 0.29999301,282.94889"
+     id="path1431" />
+  <polyline
+     class="cls-4"
+     points="0.29 186.46 0.29 185.1 8.8 185.1 8.8 284.31 0.29 284.31 0.29 284.12"
+     id="polyline1433"
+     transform="matrix(0.99997672,0,0,0.99996078,0,-7.4519704e-6)" />
+  <polyline
+     class="cls-4"
+     points="0.29 330.43 8.8 330.43 8.8 429.64 0.29 429.64"
+     id="polyline1435"
+     transform="matrix(0.99997672,0,0,0.99996078,0,-7.4519704e-6)" />
+  <line
+     class="cls-4"
+     x1="585.86633"
+     y1="453.34219"
+     x2="585.86633"
+     y2="482.00107"
+     id="line1437" />
+  <line
+     class="cls-4"
+     x1="0.28999323"
+     y1="453.34219"
+     x2="0.28999323"
+     y2="482.00107"
+     id="line1439" />
+  <line
+     class="cls-4"
+     x1="448.07956"
+     y1="482.00107"
+     x2="585.86633"
+     y2="482.00107"
+     id="line1441" />
+  <line
+     class="cls-4"
+     x1="397.43076"
+     y1="482.00107"
+     x2="419.73022"
+     y2="482.00107"
+     id="line1443" />
+  <line
+     class="cls-4"
+     x1="66.398453"
+     y1="482.00107"
+     x2="70.688354"
+     y2="482.00107"
+     id="line1445" />
+  <line
+     class="cls-4"
+     x1="156.55635"
+     y1="0.0099921552"
+     x2="190.57556"
+     y2="0.0099921552"
+     id="line1447" />
+  <line
+     class="cls-4"
+     x1="66.398453"
+     y1="482.00107"
+     x2="404.64056"
+     y2="482.00107"
+     id="line1449" />
+  <line
+     class="cls-4"
+     x1="448.07956"
+     y1="482.00107"
+     x2="448.07956"
+     y2="490.51074"
+     id="line1451" />
+  <line
+     class="cls-4"
+     x1="419.73022"
+     y1="490.51074"
+     x2="448.07956"
+     y2="490.51074"
+     id="line1453" />
+  <line
+     class="cls-4"
+     x1="419.73022"
+     y1="490.51074"
+     x2="419.73022"
+     y2="482.00107"
+     id="line1455" />
+  <line
+     class="cls-4"
+     x1="0.28999323"
+     y1="482.00107"
+     x2="0.28999323"
+     y2="490.51074"
+     id="line1457" />
+  <line
+     class="cls-4"
+     x1="0.28999323"
+     y1="490.51074"
+     x2="28.639332"
+     y2="490.51074"
+     id="line1459" />
+  <line
+     class="cls-4"
+     x1="28.639332"
+     y1="482.00107"
+     x2="28.639332"
+     y2="490.51074"
+     id="line1461" />
+  <line
+     class="cls-4"
+     x1="68.548409"
+     y1="482.00107"
+     x2="28.639332"
+     y2="482.00107"
+     id="line1463" />
+  <line
+     class="cls-4"
+     x1="156.49635"
+     y1="8.6596527"
+     x2="156.55635"
+     y2="0.0099921552"
+     id="line1465" />
+  <line
+     class="cls-4"
+     x1="190.57556"
+     y1="8.6596527"
+     x2="190.57556"
+     y2="0.0099921552"
+     id="line1467" />
+  <line
+     class="cls-4"
+     x1="313.8627"
+     y1="8.6596527"
+     x2="313.93268"
+     y2="0.0099921552"
+     id="line1469" />
+  <line
+     class="cls-4"
+     x1="347.88193"
+     y1="8.6596527"
+     x2="347.9519"
+     y2="0.0099921552"
+     id="line1471" />
+  <line
+     class="cls-4"
+     x1="313.90268"
+     y1="0.0099921552"
+     x2="347.91193"
+     y2="0.0099921552"
+     id="line1473" />
+  <line
+     class="cls-4"
+     x1="190.57556"
+     y1="8.6596527"
+     x2="313.90268"
+     y2="8.6596527"
+     id="line1475" />
+  <line
+     class="cls-4"
+     x1="347.91193"
+     y1="8.6596527"
+     x2="585.86633"
+     y2="8.6596527"
+     id="line1477" />
+  <polygon
+     class="cls-2"
+     points="534,355.93 534,341.75 539.66,341.75 539.66,336.17 534,336.17 534,321.92 499.98,321.92 499.98,336.17 494.3,336.17 494.3,341.75 499.98,341.75 499.98,355.93 "
+     id="polygon1479"
+     transform="matrix(0.99997672,0,0,0.99996078,0,-7.4519704e-6)" />
+  <ellipse
+     class="cls-1"
+     cx="249.70419"
+     cy="54.707848"
+     id="circle1481"
+     rx="7.0898352"
+     ry="7.0897222" />
+  <ellipse
+     class="cls-1"
+     cx="204.36523"
+     cy="54.707848"
+     id="circle1483"
+     rx="7.0898352"
+     ry="7.0897222" />
+</svg>

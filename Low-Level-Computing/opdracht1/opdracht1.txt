@@ -1,0 +1,36 @@
+Opdracht 1: Datasheet uitpluizen
+
+1: Pagina 1
+• Operating Voltage
+– 1.8 - 5.5V for ATtiny25V/45V/85V
+– 2.7 - 5.5V for ATtiny25/45/85
+
+2: Pagina 24
+8MHz
+
+3: Pagina 173
+3.2 mA
+
+4: Pagina 1
+8-bit
+
+5: Pagina 1
+EEPROM: 512 bytes
+
+6: Pagina 1
+Flash: 8K
+
+7: Pagina 1
+General Purpose Registers: 32 8-bit registers
+
+8: Pagina 2
+6 digital pins
+
+9: Pagina 2
+6 analog pins
+
+10: Pagina 65 en pagina 83
+2 timers/counters
+
+11: Pagina 1
+10 bits
