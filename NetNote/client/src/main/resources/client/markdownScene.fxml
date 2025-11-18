@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.web.WebView?>
+
+
+<GridPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.testFunctionality.MarkdownCtrl">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <TextArea fx:id="markdownInput" maxHeight="1.7976931348623157E308" onKeyTyped="#onTextAreaKeyTyped" prefHeight="344.0" prefWidth="300.0" GridPane.columnIndex="1" />
+      <WebView fx:id="htmlOutput" minHeight="-1.0" minWidth="-1.0" prefHeight="344.0" prefWidth="302.0" GridPane.columnIndex="2" />
+   </children>
+</GridPane>

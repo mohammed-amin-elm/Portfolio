@@ -1,0 +1,174 @@
+ @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
+.strongColor {
+    -fx-background-color: #3A3A3A;
+}
+.mediumColor {
+    -fx-background-color: #F2F2F2;
+}
+.collectionSplitPane > .split-pane-divider {
+    -fx-background-color: #3A3A3A;
+}
+.collectionSplitPane {
+    -fx-border-color: #3A3A3A;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-background-color: #3A3A3A;
+}
+.textArea .content {
+    -fx-background-color: #F2F2F2;
+}
+.filesGridPane {
+    -fx-background-color: #3A3A3A;
+    -fx-border-color: #A0A0A0;
+    -fx-border-width: 3px;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: #3A3A3A;
+}
+.scroll-bar:vertical .track {
+    -fx-background-color: #3A3A3A;  /* Track color */
+    -fx-background-insets: 0;
+}
+.scroll-bar:horizontal .track {
+    -fx-background-color: #3A3A3A;  /* Track color */
+    -fx-background-insets: 0;
+}
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #C8C8C8;  /* Thumb color (scroll handle) */
+    -fx-background-radius: 10px;    /* Rounded corners for the thumb */
+}
+.scroll-bar:horizontal .thumb {
+    -fx-background-color: #C8C8C8;  /* Thumb color (scroll handle) */
+    -fx-background-radius: 10px;    /* Rounded corners for the thumb */
+}
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #A0A0A0;  /* Darker color when hovered */
+}
+.scroll-bar:horizontal .thumb:hover {
+    -fx-background-color: #A0A0A0;  /* Darker color when hovered */
+}
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color: #3A3A3A;
+    -fx-border-color: #3A3A3A;
+}
+.scroll-bar:horizontal .increment-button,
+.scroll-bar:horizontal .decrement-button {
+    -fx-background-color: #3A3A3A;
+    -fx-border-color: #3A3A3A;
+}
+.listView .list-cell {
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-padding: 5px;
+    -fx-font-weight: bold;
+}
+.listView .list-cell:odd {
+    -fx-background-color: #C8C8C8;
+}
+.listView .list-cell:even {
+    -fx-background-color: #A0A0A0;
+}
+.listView .list-cell:hover {
+    -fx-background-color: lightblue; /* Highlight color when hovering */
+    -fx-text-fill: black;
+}
+.listView .list-cell:selected {
+    -fx-background-color: darkblue; /* Background color for selected cell */
+    -fx-text-fill: white; /* Text color for selected cell */
+}
+.button {
+    -fx-cursor: hand;
+}
+.strongButton {
+    -fx-background-color: #6C6C6C;
+    -fx-text-fill: #F2F2F2;
+    -fx-font-weight: bold;
+}
+.addedFiles {
+    -fx-text-fill: #F2F2F2;
+    -fx-font-weight: bold;
+}
+.tagSplitPane > .split-pane-divider {
+    -fx-background-color: #3A3A3A;
+}
+
+.tagSplitPane {
+    -fx-border-color: #3A3A3A;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-background-color: #3A3A3A;
+}
+.searchBar {
+    -fx-background-color: #F2F2F2;
+    -fx-padding: 10px 15px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-color: #ddd;
+    -fx-border-width: 1px;
+    -fx-alignment: center-left;
+    -fx-font-size: 14px;
+}
+.searchBar:focused {
+    -fx-border-color: #0078d7; /* Modern blue accent */
+}
+
+.searchBar .text-field {
+    -fx-background-color: transparent;
+    -fx-border: none;
+    -fx-padding: 5px 0;
+    -fx-font-size: 14px;
+}
+
+.searchBar .icon {
+    -fx-opacity: 0.6;
+    -fx-cursor: hand;
+    -fx-padding: 0 10px 0 0;
+}
+.title {
+    -fx-text-fill: #F2F2F2;
+    -fx-font-size: 40px;
+    -fx-font-family: "Smooch Sans", serif;
+    -fx-font-optical-sizing: auto;
+    -fx-font-weight: normal;
+    -fx-font-style: normal;
+}
+.comboBox {
+    -fx-background-color: #6C6C6C;
+}
+.comboBox .list-cell {
+    -fx-font-weight: bold;
+    -fx-text-fill: #F2F2F2;
+}
+.comboBox .combo-box-base .prompt-text {
+    -fx-text-fill: #F2F2F2;
+}
+.comboBox .combo-box-popup .list-cell {
+    -fx-background-color: #C8C8C8;
+    -fx-text-fill: #333333;
+}
+ .comboBox .combo-box-popup .list-cell:hover {
+    -fx-background-color: lightblue;
+    -fx-text-fill: black;
+}
+ .activatedTagBox .list-cell {
+     -fx-background-color: #b1ffb1;
+     -fx-text-alignment: center;
+     -fx-border-color: black;
+     -fx-font-weight: bold;
+     -fx-text-fill: black;
+ }
+
+ .scroll-bar .increment-button,
+ .scroll-bar .decrement-button {
+     -fx-background-color: transparent;
+     -fx-padding: 0;
+     -fx-shape: null;
+     visibility: hidden;
+ }
+
+
+ .filterPane {
+    -fx-background-color: #3A3A3A;
+}

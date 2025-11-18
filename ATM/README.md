@@ -53,13 +53,6 @@ This project emphasizes reliability, security, and modularity in a simulated fin
   - Sensor feedback
 - Communicates with backend via serial/USB
 
-### 🧪 Testing
-- Python unittest suite for API endpoints
-- Automated tests for:
-  - Balance validation
-  - PIN logic
-  - Withdrawal rules
-
 ---
 
 ## 🛠️ Tech Stack

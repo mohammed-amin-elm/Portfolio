@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.testFunctionality.SidebarCtrl">
+    <children>
+        <ScrollPane layoutY="83.0" prefHeight="200.0" prefWidth="200.0">
+            <content>
+                <ListView fx:id="noteListView" prefHeight="198.0" prefWidth="182.0" />
+            </content>
+        </ScrollPane>
+        <Button layoutY="292.0" mnemonicParsing="false" onAction="#createClick" text="Create" />
+        <Button layoutX="146.0" layoutY="292.0" mnemonicParsing="false" onAction="#refreshClick" text="Refresh" />
+        <Button layoutX="73.0" layoutY="292.0" mnemonicParsing="false" onAction="#deleteClick" text="Delete" />
+    </children>
+</Pane>
+
+

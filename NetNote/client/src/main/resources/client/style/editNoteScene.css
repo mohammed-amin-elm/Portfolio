@@ -1,0 +1,27 @@
+.strongColor {
+    -fx-background-color: #3A3A3A;
+}
+.button {
+    -fx-background-color: #6C6C6C;
+    -fx-text-fill: #F2F2F2;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+.combo-box {
+    -fx-background-color: #6C6C6C;
+}
+.combo-box .list-cell {
+    -fx-font-weight: bold;
+    -fx-text-fill: #F2F2F2;
+}
+.combo-box .combo-box-base .prompt-text {
+    -fx-text-fill: #F2F2F2;
+}
+.combo-box .combo-box-popup .list-cell {
+    -fx-background-color: #C8C8C8;
+    -fx-text-fill: #333333;
+}
+.combo-box .combo-box-popup .list-cell:hover {
+    -fx-background-color: lightblue;
+    -fx-text-fill: black;
+}

@@ -1,0 +1,56 @@
+.strongButton {
+    -fx-background-color: #6C6C6C;
+    -fx-text-fill: #F2F2F2;
+    -fx-font-weight: bold;
+}
+.strongColor {
+    -fx-background-color: #3A3A3A;
+}
+.selectedLabel {
+    -fx-font-weight: bold;
+}
+.listView .list-cell {
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-padding: 5px;
+    -fx-font-weight: bold;
+}
+.listView .list-cell:odd {
+    -fx-background-color: #C8C8C8;
+}
+.listView .list-cell:even {
+    -fx-background-color: #A0A0A0;
+}
+.listView .list-cell:hover {
+    -fx-background-color: lightblue; /* Highlight color when hovering */
+    -fx-text-fill: black;
+}
+.listView .list-cell:selected {
+    -fx-background-color: darkblue; /* Background color for selected cell */
+    -fx-text-fill: white; /* Text color for selected cell */
+}
+.title {
+    -fx-font-weight: bold;
+}
+.button {
+    -fx-cursor: hand;
+}
+
+.comboBox {
+    -fx-background-color: #6C6C6C;
+}
+.comboBox .list-cell {
+    -fx-font-weight: bold;
+    -fx-text-fill: #F2F2F2;
+}
+.comboBox .combo-box-base .prompt-text {
+    -fx-text-fill: #F2F2F2;
+}
+.comboBox .combo-box-popup .list-cell {
+    -fx-background-color: #C8C8C8;
+    -fx-text-fill: #333333;
+}
+.comboBox .combo-box-popup .list-cell:hover {
+    -fx-background-color: lightblue;
+    -fx-text-fill: black;
+}

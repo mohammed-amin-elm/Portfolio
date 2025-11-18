@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<GridPane fx:id="gridPane" minHeight="600.0" minWidth="1400.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.DefaultCtrl">
+    <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS" maxWidth="Infinity" minWidth="280.0" prefWidth="260.0" />
+        <ColumnConstraints hgrow="ALWAYS" maxWidth="Infinity" minWidth="10.0" prefWidth="300.0" />
+        <ColumnConstraints hgrow="ALWAYS" maxWidth="Infinity" minWidth="10.0" prefWidth="300.0" />
+    </columnConstraints>
+    <rowConstraints>
+      <RowConstraints maxHeight="Infinity" minHeight="10.0" prefHeight="58.40000610351562" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="Infinity" minHeight="10.0" prefHeight="58.40000610351562" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="Infinity" minHeight="10.0" prefHeight="576.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="Infinity" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+      <AnchorPane fx:id="textPane" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+         <children>
+              <TextArea fx:id="markdownInput" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onKeyTyped="#onTextAreaKeyTyped" prefHeight="491.0" prefWidth="315.0" styleClass="textArea" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+        <WebView fx:id="htmlOutput" minHeight="1.0" minWidth="-1.0" prefHeight="491.0" prefWidth="399.0" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS" />
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="541.0" prefWidth="323.0" GridPane.rowIndex="2">
+         <children>
+             <ScrollPane hbarPolicy="ALWAYS" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="576.0" prefWidth="323.0" styleClass="listViewScrollPane" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <content>
+                  <ListView fx:id="noteListView" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#onSidebarTitlePressed" prefHeight="1000.0" prefWidth="700.0" styleClass="listView" />
+               </content>
+             </ScrollPane>
+         </children>
+      </AnchorPane>
+      <SplitPane dividerPositions="0.3878504672897196" prefHeight="59.0" prefWidth="391.0" styleClass="collectionSplitPane" GridPane.rowIndex="1">
+         <items>
+            <AnchorPane styleClass="strongColor">
+               <children>
+                  <Button fx:id="collectionSceneButton" contentDisplay="CENTER" layoutX="7.0" layoutY="15.0" minHeight="26.0" minWidth="104.0" mnemonicParsing="false" onAction="#onCollectionClick" prefHeight="26.0" prefWidth="104.0" styleClass="strongButton" text="Edit Collections" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="10.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="57.0" prefWidth="163.0" styleClass="strongColor">
+               <children>
+                    <ComboBox fx:id="collectionTitleComboBox" layoutX="15.0" layoutY="15.0" minHeight="-Infinity" minWidth="-Infinity" onAction="#onCollectionSelected" onMousePressed="#onMenuClick" prefHeight="26.0" prefWidth="163.0" promptText="Choose collection" styleClass="comboBox" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <children>
+            <SplitPane dividerPositions="0.7533834586466165" layoutX="55.0" layoutY="-51.0" prefHeight="160.0" prefWidth="200.0" styleClass="tagSplitPane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                  <VBox>
+                     <children>
+                      <AnchorPane fx:id="tagPane" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="41.0" prefWidth="1000.0" styleClass="mediumColor">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" />
+                           </padding></AnchorPane>
+                        <ScrollBar fx:id="scrollBar" styleClass="scroll-bar" />
+                     </children>
+                  </VBox>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <AnchorPane layoutY="16.0" styleClass="strongColor" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Button fx:id="clearTagsButton" layoutX="16.0" layoutY="15.0" minHeight="26.0" minWidth="46.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="46.0" styleClass="strongButton" text="Clear" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="59.0" prefWidth="323.0" styleClass="strongColor" GridPane.rowIndex="3">
+         <children>
+            <ButtonBar layoutX="17.0" layoutY="16.0" minWidth="-Infinity" prefHeight="26.0" prefWidth="289.0" AnchorPane.leftAnchor="40.0">
+               <buttons>
+            
+                   <Button fx:id="createNote" minWidth="30.0" mnemonicParsing="false" onAction="#createClick" prefHeight="26.0" prefWidth="30.0" styleClass="strongButton" text="Create" textAlignment="CENTER" />
+                    <Button fx:id="refreshNote" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#refreshClick" prefHeight="26.0" prefWidth="62.0" styleClass="strongButton" text="Refresh" />
+                    <Button fx:id="deleteNote" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="67.0" mnemonicParsing="false" onAction="#deleteClick" prefHeight="26.0" prefWidth="76.0" styleClass="strongButton" text="Delete" textAlignment="CENTER" />
+                  <Button fx:id="editNote" mnemonicParsing="false" onAction="#onEditClick" styleClass="strongButton" text="Edit" />
+               </buttons>
+            </ButtonBar>
+            <Label layoutX="7.0" layoutY="21.0">
+               <graphic>
+                  <SVGPath content="M 4.2 -4.2 h 7.56 v -4.2 h 4.2 v -7.56 H 4.2 v 11.76 Z m 0 1.68 q -0.693 0 -1.1865 -0.4935 T 2.52 -4.2 v -11.76 q 0 -0.693 0.4935 -1.1865 T 4.2 -17.64 h 11.76 q 0.693 0 1.1865 0.4935 T 17.64 -15.96 v 8.4 L 12.6 -2.52 H 4.2 Z m 1.68 -5.88 v -1.68 h 4.2 v 1.68 H 5.88 Z m 0 -3.36 v -1.68 h 8.4 v 1.68 H 5.88 Z m -1.68 7.56 v -11.76 v 11.76 Z" fill="#f2f2f2" />
+               </graphic>
+            </Label>
+         </children>
+      </AnchorPane>
+      <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="55.0" prefWidth="800.0" styleClass="strongColor" GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="90.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="253.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="filesLabel" layoutX="49.0" layoutY="22.0" styleClass="addedFiles" text="Files:" />
+                  <Label layoutX="23.0" layoutY="19.0">
+                     <graphic>
+                        <SVGPath content="M 10.2 -13.8 h 8.4 v -1.92 H 10.2 v 1.92 Z m 0 3.6 h 8.4 v -1.92 H 10.2 v 1.92 Z m 0 3.6 h 5.22 v -1.92 H 10.2 v 1.92 Z M 7.9116 -2.88 Q 7.02 -2.88 6.39 -3.5145 T 5.76 -5.04 v -18.72 q 0 -0.891 0.6345 -1.5255 Q 7.029 -25.92 7.92 -25.92 h 9.36 l 5.76 5.76 v 15.12 q 0 0.891 -0.6348 1.5255 Q 21.7704 -2.88 20.8788 -2.88 H 7.9116 Z M 15.84 -18.72 v -5.04 H 7.92 v 18.72 h 12.96 v -13.68 H 15.84 Z M 7.92 -23.76 v 5.04 v -5.04 v 18.72 v -18.72 Z" fill="#f2f2f2" />
+                     </graphic>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="60.0" prefWidth="642.0" GridPane.columnIndex="1">
+               <content>
+                  <HBox fx:id="fileBar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="800.0" spacing="10.0" styleClass="mediumColor">
+                     <padding>
+                        <Insets left="10.0" top="15.0" />
+                     </padding>
+                  </HBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </GridPane>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="55.0" prefWidth="428.0" styleClass="strongColor" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <children>
+            <ButtonBar layoutX="-3.0" layoutY="10.0" prefHeight="40.0" prefWidth="353.0" AnchorPane.leftAnchor="30.0">
+              <buttons>
+                  <Button fx:id="uploadButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleFileChooser" styleClass="strongButton" text="Upload" />
+                <Button fx:id="fileRefreshButton" mnemonicParsing="false" onAction="#refreshFiles" styleClass="strongButton" text="Refresh" />
+                  <Button fx:id="fileSaveButton" mnemonicParsing="false" onAction="#saveFile" styleClass="strongButton" text="Save" />
+                  <Button fx:id="fileDeleteButton" mnemonicParsing="false" onAction="#deleteFile" styleClass="strongButton" text="Delete" />
+                  <Button fx:id="fileEditButton" mnemonicParsing="false" onAction="#editFile" styleClass="strongButton" text="Edit" />
+              </buttons>
+            </ButtonBar>
+            <Label layoutX="-15.0" layoutY="20.0" />
+            <SVGPath content="M 5.04 -5.76 q -0.96 0 -1.56 -0.6348 t -0.6 -1.5264 v -12.9672 Q 2.88 -21.78 3.48 -22.41 t 1.56 -0.63 h 6.48 l 2.88 2.88 h 9.39 q 0.93 0 1.515 0.63 t 0.645 1.53 H 13.53 l -2.88 -2.88 H 5.04 v 12.96 l 2.34 -7.92 h 20.7 l -2.55 8.55 q -0.24 0.69 -0.63 1.11 t -1.14 0.42 H 5.04 Z m 2.25 -2.16 h 16.14 l 1.77 -5.76 H 9 l -1.71 5.76 Z m 0 0 l 1.71 -5.76 l -1.71 5.76 Z m -2.25 -10.08 v -2.88 v 2.88 Z" fill="#f2f2f2" layoutX="14.0" layoutY="44.0" />
+         </children>
+      </AnchorPane>
+      <GridPane prefHeight="74.0" prefWidth="340.0" styleClass="strongColor" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ScrollPane fx:id="notepadTitles" disable="true" hbarPolicy="NEVER" minHeight="119.0" prefHeight="119.0" prefWidth="340.0" visible="false" GridPane.rowIndex="1">
+               <content>
+                  <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" />
+               </content>
+               <GridPane.margin>
+                  <Insets top="150.0" />
+               </GridPane.margin>
+            </ScrollPane>
+            <AnchorPane>
+               <children>
+                  <TextField fx:id="searchbar" alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" onKeyTyped="#onSearchbarKeyTyped" prefHeight="42.0" promptText="Search..." style="-fx-border-color: black;" styleClass="searchBar" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="30.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="14.0" layoutY="41.0" textFill="#f2f2f2">
+                     <graphic>
+                        <SVGPath content="M 22.95 -4.32 L 15.78 -11.49 q -0.9 0.66 -1.9737 1.035 q -1.0737 0.375 -2.2854 0.375 Q 8.52 -10.08 6.42 -12.18 t -2.1 -5.1 q 0 -3 2.1 -5.1 t 5.1 -2.1 q 3 0 5.1 2.1 t 2.1 5.1009 q 0 1.2117 -0.375 2.2854 Q 17.97 -13.92 17.31 -13.02 l 7.17 7.17 l -1.53 1.53 Z M 11.52 -12.24 q 2.1 0 3.57 -1.47 t 1.47 -3.57 q 0 -2.1 -1.47 -3.57 t -3.57 -1.47 q -2.1 0 -3.57 1.47 t -1.47 3.57 q 0 2.1 1.47 3.57 t 3.57 1.47 Z" fill="#f2f2f2" />
+                     </graphic></Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="strongColor" GridPane.columnIndex="1" />
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="strongColor" GridPane.columnIndex="2" />
+      <GridPane styleClass="strongColor">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label styleClass="title" text="NetNote" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets left="30.0" />
+               </GridPane.margin>
+            </Label>
+         </children>
+      </GridPane>
+
+    </children>
+
+</GridPane>
