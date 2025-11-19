@@ -29,6 +29,15 @@ Technologieën: **C++ (embedded), I²C, motor control**
 
 ---
 
+### 📝 NetNote — *Distributed Note-Taking Application*
+NetNote is een gedistribueerde notitie-applicatie die gebruikmaakt van een client/server-architectuur.  
+Gebruikers kunnen notities aanmaken, bewerken, synchroniseren en opmaken met Markdown. Communicatie tussen client en server gebeurt via **REST** en **WebSockets**, en JSON wordt gebruikt voor data-uitwisseling.
+
+**Technologieën:**  
+**Java (Spring & JavaFX), SQL, JSON, WebSockets, REST**  
+
+---
+
 ### 🌡️ Digital Thermometer
 Low-level digitale thermometer gebouwd op een **ATtiny85** met **SPI**-aangestuurde displays (7-segment + matrix).  
 Toont zowel de actuele temperatuur als een historiek over tijd.  
